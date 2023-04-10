@@ -77,6 +77,7 @@ namespace ConsoleFourangleClasses.Classes
             sideB = Math.Sqrt((x2 - x3) * (x2 - x3) + (y2 - y3)* (y2 - y3));
             sideC = Math.Sqrt((x3 - x4) * (x3 - x4) + (y3 - y4) * (y3 - y4));
             sideD = Math.Sqrt((x1 - x4) * (x1 - x4) + (y1 - y4) * (y1 - y4));
+            Console.WriteLine("Стороны четырехугольника");
             Console.WriteLine($"Стороная A={Math.Round(sideA, 2)}");
             Console.WriteLine($"Стороная B={Math.Round(sideB, 2)}");
             Console.WriteLine($"Стороная C={Math.Round(sideC, 2)}");
@@ -97,6 +98,8 @@ namespace ConsoleFourangleClasses.Classes
         public double Ploshad()
         {
             double s = 0;
+            double p = Perimetr() / 2.0;
+            s = Math.Sqrt((p-sideA)* (p - sideB) * (p - sideC) * (p - sideD));
             return s;
         }
     }
