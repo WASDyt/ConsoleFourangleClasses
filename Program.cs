@@ -14,20 +14,24 @@ ClsFourangle fourngle2 = new ClsFourangle(-5, 4, 8, 6, 9, -4, -4, -3);
 fourngle2.SidesCalculation();
 fourngle2.DiagonalsCalculation();
 Console.WriteLine($"Периметр = {fourngle2.Perimetr()}");
+Console.WriteLine($"Площадь = {fourngle2.Ploshad()}");
 
 ClsParallelogram parall = new ClsParallelogram();
 parall.KeyboardInput();
 parall.SidesCalculation();
 parall.DiagonalsCalculation();
+parall.HeightCalculation();
 Console.WriteLine($"Периметр = {parall.Perimetr()}");
+Console.WriteLine($"Площадь = {parall.Ploshad()}");
 
-ClsParallelogram rec = new ClsParallelogram();
+ClsRectangle rec = new ClsRectangle();
 rec.KeyboardInput();
 rec.SidesCalculation();
 rec.DiagonalsCalculation();
 Console.WriteLine($"Периметр = {rec.Perimetr()}");
+Console.WriteLine($"Площадь = {rec.Ploshad()}");
 
-ClsParallelogram rhomb = new ClsParallelogram();
+ClsRhomb rhomb = new ClsRhomb();
 rhomb.KeyboardInput();
 rhomb.SidesCalculation();
 rhomb.DiagonalsCalculation();

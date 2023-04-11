@@ -21,5 +21,12 @@ namespace ConsoleFourangleClasses.Classes
         {
             return 4 * sideA;
         }
+        public double Ploshad()
+        {
+            double s = 0;
+            double p = Perimetr() / 2.0;
+            s = Math.Sqrt((p - sideA));
+            return s;
+        }
     }
 }

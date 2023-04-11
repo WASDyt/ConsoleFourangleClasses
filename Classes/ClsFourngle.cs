@@ -68,7 +68,6 @@ namespace ConsoleFourangleClasses.Classes
             y3 = int.Parse(Console.ReadLine());
             x4 = int.Parse(Console.ReadLine());
             y4 = int.Parse(Console.ReadLine());
-
         }
         // Вычисления сторон
         public void SidesCalculation()
@@ -82,7 +81,6 @@ namespace ConsoleFourangleClasses.Classes
             Console.WriteLine($"Стороная B={Math.Round(sideB, 2)}");
             Console.WriteLine($"Стороная C={Math.Round(sideC, 2)}");
             Console.WriteLine($"Стороная D={Math.Round(sideD, 2)}");
-
         }
         public void DiagonalsCalculation()
         {

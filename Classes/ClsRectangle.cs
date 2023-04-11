@@ -12,6 +12,7 @@ namespace ConsoleFourangleClasses.Classes
         private double sideB;
         private double sideC;
         private double sideD;
+        private double height;
 
         public void SidesCalculation()
         {
@@ -25,9 +26,16 @@ namespace ConsoleFourangleClasses.Classes
             Console.WriteLine($"Стороная C={Math.Round(sideC, 2)}");
             Console.WriteLine($"Стороная D={Math.Round(sideD, 2)}");
         }
-        public double Perimetr()
+        public void HeightCalculation()
         {
-            return 2 * (sideA + sideB);
+            height = Math.Sqrt((sideA * 2 + sideB * 2));
+        }
+        public double Ploshad()
+        {
+            double s = 0;
+            double p = Perimetr() / 2.0;
+            s = sideA * sideB;
+            return s;
         }
     }
 }
