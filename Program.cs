@@ -36,3 +36,4 @@ rhomb.KeyboardInput();
 rhomb.SidesCalculation();
 rhomb.DiagonalsCalculation();
 Console.WriteLine($"Периметр = {rhomb.Perimetr()}");
+Console.WriteLine($"Площадь = {rhomb.Ploshad()}");

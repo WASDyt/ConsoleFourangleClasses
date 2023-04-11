@@ -30,6 +30,10 @@ namespace ConsoleFourangleClasses.Classes
         {
             height = Math.Sqrt((sideA * 2 + sideB * 2));
         }
+        public double Perimetr()
+        {
+            return 2 * (sideA + sideB);
+        }
         public double Ploshad()
         {
             double s = 0;

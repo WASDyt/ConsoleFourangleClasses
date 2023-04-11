@@ -25,7 +25,7 @@ namespace ConsoleFourangleClasses.Classes
         {
             double s = 0;
             double p = Perimetr() / 2.0;
-            s = Math.Sqrt((p - sideA));
+            s = Math.Pow(sideA,2) * Math.Sqrt(X1);
             return s;
         }
     }
